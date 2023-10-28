@@ -440,57 +440,83 @@ const contextMenuParents = {
 };
 
 const fileTypeArr = [
-	{
-		title:"pdf",
-		id:"pdf"
-	},
-	{
-		title:"doc",
-		id:"doc"
-	},
-	{
-		title:"xls",
-		id:"xls"
-	},
-	{
-		title:"ppt",
-		id:"ppt"
-	},
-	{
-		title:"ps",
-		id:"ps"
-	},
-	{
-		title:"dwf",
-		id:"dwf"
-	},
-	{
-		title:"kml",
-		id:"kml"
-	},
-	{
-		title:"kmz",
-		id:"kmz"
-	},
-	{
-		title:"rtf",
-		id:"rtf"
-	},
-	{
-		title:"swf",
-		id:"swf"
-	},
     {
-        title:"txt",
-        id:"txt"
+        title: "doc",
+        id: "doc"
     },
     {
-        title:"xml",
-        id:"xml"
+        title: "dwf",
+        id: "dwf"
     },
     {
-        title:"tex",
-        id:"tex"
+        title: "json",
+        id: "json"
+
+    },
+    {
+        title: "kml",
+        id: "kml"
+    },
+    {
+        title: "kmz",
+        id: "kmz"
+    },
+    {
+        title: "md",
+        id: "md"
+    },
+    {
+        title: "mp3",
+        id: "mp3"
+    },
+    {
+        title: "mp4",
+        id: "mp4"
+    },
+    {
+        title: "pdf",
+        id: "pdf"
+    },
+
+    {
+        title: "ppt",
+        id: "ppt"
+    },
+    {
+        title: "ps",
+        id: "ps"
+    },
+    {
+        title: "rtf",
+        id: "rtf"
+    },
+    {
+        title: "swf",
+        id: "swf"
+    },
+    {
+        title: "tex",
+        id: "tex"
+    },
+    {
+        title: "txt",
+        id: "txt"
+    },
+    {
+        title: "wav",
+        id: "wav"
+    },
+    {
+        title: "xls",
+        id: "xls"
+    },
+    {
+        title: "xml",
+        id: "xml"
+    },
+    {
+        title: "zip",
+        id: "zip"
     }
 ];
 const timeRangeArr = [
