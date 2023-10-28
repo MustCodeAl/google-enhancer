@@ -612,17 +612,20 @@ function siteSearchClicked (response) {
 
 }
 
-function filetypeSearchClicked (response) {
-	const type = response.menuItemId.slice(-3);
-    let url = response.pageUrl;
-    if(url.includes('filetype')) {
-       url = url.replace(/\+filetype%3A\w+/, '');
-    }
-	const newUrl = url.replace(/[&?]q=(.+?)[&?]/, function (match, p1) {
-		return `&q=${p1}+filetype%3A${type}&`;
-	});
-	window.open(newUrl);
+function filetypeSearchClicked(response) {
+  const type = response.menuItemId.slice(-3);
+  let url = response.pageUrl;
+
+  if (url.includes('filetype')) {
+    url = url.replace(/\+filetype%3A\w+/, '');
+  } else {
+    url = url.replace(/([?&])q=(.+?)[&?]/, '$1');
+  }
+
+  const newUrl = `${url}&q=${encodeURIComponent(response.selectionText)}+filetype%3A${type}`;
+  window.open(newUrl);
 }
+
 
 function sendToFront (response) {
 	chrome.tabs.query({active:true, currentWindow:true}, function (tab) {
